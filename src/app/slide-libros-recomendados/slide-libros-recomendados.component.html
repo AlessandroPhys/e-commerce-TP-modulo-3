@@ -1,0 +1,13 @@
+<div class="articulo-card">
+
+  <div class="articulo-image">
+    <img [src]="imagenUrl" [alt]="titulo">
+  </div>
+
+  <div *ngIf="mostrarPrecio" class="articulo-detail">
+    <div class="name">{{ titulo }}</div>
+    <div class="autor">{{ autor }}</div>
+    <p class="precio">{{ precio | currency:'USD' }}</p>
+  </div>
+
+</div>

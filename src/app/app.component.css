@@ -1,0 +1,28 @@
+
+.banner-container {
+  position: relative; /* Necesario para posicionar el cuadro encima de la imagen */
+  width: 100%;
+  height: 500px; /* Ajusta la altura según lo que necesites */
+  overflow: hidden;
+}
+
+.articulos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.section-libros {
+  padding: 40px; /* Añade márgenes considerables a la sección */
+  margin: 0 20px; /* Márgenes a los lados */
+}
+
+
+.app-slide-libros-recomendados {
+  margin: 20px; /* Márgenes entre los artículos */
+  width: 100%; /* Esto se puede ajustar si se quiere un tamaño específico */
+  max-width: 250px; /* Esto establece un límite de tamaño para los elementos */
+}
+
