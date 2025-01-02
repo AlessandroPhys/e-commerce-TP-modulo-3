@@ -1,0 +1,153 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4EDED;
+  color: #333;
+}
+
+.navbar {
+  background-color: #36827F;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+  border-radius: 50%;
+}
+
+.navbar .form-control {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.navbar .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(54, 130, 127, 0.5);
+}
+
+.navbar button img {
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+.navbar button:hover img {
+  transform: scale(1.2);
+}
+
+.navbar .btn-outline-light {
+  border-radius: 20px;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #fff;
+  color: #36827F;
+}
+
+.navbar .btn-outline-success {
+  border-radius: 20px;
+  border: 2px solid #F9DB6D;
+  transition: all 0.3s;
+}
+
+.navbar .btn-outline-success:hover {
+  background-color: #F9DB6D;
+  color: #fff;
+}
+
+.nav-scroller {
+  background-color: #F4EDED;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+.nav-link {
+  color: #36827F;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: #F9DB6D;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: #F9DB6D;
+  border-bottom: 2px solid #36827F;
+}
+
+.badge {
+  background-color: #F9DB6D;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar .form-control {
+    max-width: 100%;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+.btn-registrarse {
+  background-color: #F9DB6D;
+  color: #464D77;
+  border: 2px solid #F9DB6D;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-registrarse:hover {
+  background-color: #F9DB6D;
+  color: #36827F;
+  border-color: #F9DB6D;
+  transform: translateY(-3px);
+}
+
+.btn-registrarse:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(54, 130, 127, 0.5);
+}
+
+.btn-Login {
+  background-color: #F4EDED;
+  color: #36827F;
+  border: 2px solid #F4EDED;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-Login:hover {
+  background-color: #F9DB6D;
+  color: 464D77;
+  border-color: #F9DB6D;
+  transform: translateY(-3px);
+}
+
+.btn-Login:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(54, 130, 127, 0.5);
+}

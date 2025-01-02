@@ -7,24 +7,42 @@
   <app-banner></app-banner>
 </div>
 
-
 <section class="section-libros">
-  <h2 class="text-center">LIBROS POPULARES</h2>
+  <div class="titulos">
+    <hr>
+    <h2>LIBROS POPULARES</h2>
+    <hr>
+  </div>
+
   <div class="articulos-container">
     <app-slide-libros-recomendados *ngFor="let articulo of articulos" [imagenUrl]="articulo.imagenUrl"
       [titulo]="articulo.titulo" [autor]="articulo.autor" [precio]="articulo.precio">
     </app-slide-libros-recomendados>
   </div>
-  <h2 class="text-center">NUEVOS LANZAMIENTOS</h2>
+
+
+  <div class="titulos">
+    <hr>
+    <h2>NUEVOS LANZAMIENTOS</h2>
+    <hr>
+  </div>
+
   <div class="articulos-container">
+
     <app-slide-libros-recomendados *ngFor="let articulo of articulos" [imagenUrl]="articulo.imagenUrl"
       [titulo]="articulo.titulo" [autor]="articulo.autor" [precio]="articulo.precio">
     </app-slide-libros-recomendados>
   </div>
+
 </section>
+<div class="titulos">
+  <hr>
+  <h2>AUSPICIANTES</h2>
+  <hr>
+</div>
 <div class="editoriales-container">
   <section class="bg-light">
-    <h2 class="text-center">EDITORIALES</h2>
+
     <div class="articulos-container">
       <app-slide-libros-recomendados *ngFor="let editorial of editoriales"
         [imagenUrl]="editorial.imagenUrl"

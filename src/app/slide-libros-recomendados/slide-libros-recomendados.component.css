@@ -1,62 +1,59 @@
-/* Estilo general para la tarjeta */
 .articulo-card {
-  display: flex; /* Configura la tarjeta para usar un diseño en filas */
-  flex-direction: row; /* Asegura que los elementos estén uno al lado del otro */
-  align-items: stretch; /* Hace que ambas columnas ocupen el mismo alto */
-  width: 300px; /* Fija el ancho de la tarjeta */
-  height: 200px; /* Fija una altura consistente para todas las tarjetas */
-  margin: 20px auto; /* Centra la tarjeta horizontalmente */
-  border: 1px solid #ddd; /* Añade un borde suave */
-  border-radius: 10px; /* Redondea ligeramente las esquinas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
-  background-color: #fff; /* Fondo blanco para claridad */
-  font-family: 'Arial', sans-serif; /* Fuente básica y legible */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Estilo para la columna de la imagen */
 .articulo-image {
-  display: flex; /* Centra la imagen dentro de su columna */
-  justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
-  overflow: hidden; /* Asegura que la imagen no sobresalga */
-  height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
-  padding: 10px; /* Añade espacio interno para que la imagen no esté pegada al borde */
-  box-sizing: border-box; /* Incluye el padding dentro de las dimensiones totales */
-  flex: 1; /* Hace que la imagen ocupe la mitad del ancho disponible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
 }
 
 .articulo-image img {
-  width: 100%; /* Ajusta el ancho de la imagen al contenedor */
-  height: 100%; /* Ajusta la altura de la imagen al contenedor */
-  object-fit: cover; /* Asegura que la imagen mantenga su proporción */
-  aspect-ratio: 1 / 1; /* Hace que la imagen sea perfectamente cuadrada */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
-/* Estilo para la columna de los detalles */
 .articulo-detail {
-  display: flex; /* Facilita la alineación de los textos */
-  flex-direction: column; /* Coloca los textos en una columna */
-  justify-content: space-between; /* Espacia el contenido verticalmente */
-  padding: 10px; /* Reduce el padding para ajustarse al tamaño más pequeño */
-  text-align: left; /* Alinea el texto a la izquierda */
-  flex: 1; /* Hace que la columna de detalles ocupe el doble de ancho que la imagen */
-  overflow: hidden; /* Evita que el contenido se desborde */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: left;
+  flex: 1;
+  overflow: hidden;
 }
 
 .articulo-detail .name {
-  font-size: 1.2em; /* Tamaño ajustado para el titulo */
-  font-weight: bold; /* Destaca el titulo */
-  margin-bottom: 5px; /* Espaciado más pequeño debajo del titulo */
-  color: #333; /* Color oscuro para buena legibilidad */
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 .articulo-detail .autor {
-  font-size: 1em; /* Tamaño medio para el autor */
-  margin-bottom: 5px; /* Espaciado más pequeño debajo del autor */
-  color: #555; /* Color gris para un tono más suave */
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: #555;
 }
 
 .articulo-detail .precio {
-  font-size: 0.9em; /* Tamaño estándar para características */
-  color: #666; /* Color gris claro para menos énfasis */
+  font-size: 0.9em;
+  color: #666;
 }

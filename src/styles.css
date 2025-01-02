@@ -1,3 +1,25 @@
 body {
   padding-top: 70px;
 }
+
+.btn-1 {
+  background-color: #F4EDED;
+  color: #36827F;
+  border: 2px solid #F4EDED;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-1:hover {
+  background-color: #F9DB6D;
+  color: #464D77;
+  border-color: #F9DB6D;
+  transform: translateY(-3px);
+}
+
+.btn-1:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(54, 130, 127, 0.5);
+}
