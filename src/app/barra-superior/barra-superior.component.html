@@ -2,11 +2,19 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
   <div class="container-fluid">
     <!-- Logo e input de búsqueda -->
-    <div class="d-flex align-items-center me-auto" style="flex-grow: 1;">
+    <div class="d-flex align-items-center me-auto" style="flex-grow: 1; margin-left: 15%;">
       <!-- Logo -->
-      <img src="logo-light.webp" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+      <button class="btn btn-registrarse" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+      aria-controls="offcanvasScrolling">
+
+        <img src="logo-light.webp" alt="Logo" style="width: 40px; height: 40px;">
+        Libros
+
+      </button>
+
+
       <!-- Barra de búsqueda -->
-      <form class="d-flex" role="search" style="flex-grow: 1; max-width: 400px;">
+      <form class="d-flex" role="search" style="flex-grow: 1; max-width: 400px; margin-left: 10px;">
         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
 
         <!-- Div para una imagen pequeña -->
@@ -19,7 +27,7 @@
     </div>
 
     <!-- Botones a la derecha -->
-    <div class="d-flex">
+    <div class="d-flex" style="margin-right: 15%;">
       <button class="btn btn-registrarse me-2" type="button">Registrarse</button>
       <button class="btn btn-Login" type="button">Login</button>
     </div>
@@ -34,4 +42,3 @@
     <a class="nav-link" href="#">Contacto</a>
   </nav>
 </div>
-

@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
 }
 
 .section-libros {
@@ -39,4 +39,10 @@ h2.text-center {
   text-align: center;
   margin-left: 90px;
   margin-right: 90px;
+}
+
+.container-body {
+  padding-top: 70px;
+  margin-left: 14.7% !important;
+  margin-right: 14.7% !important;
 }

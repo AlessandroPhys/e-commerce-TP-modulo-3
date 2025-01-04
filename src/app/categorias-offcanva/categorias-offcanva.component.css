@@ -1,0 +1,30 @@
+
+/* Contenedor de la lista principal */
+.container {
+  position: relative; /* Necesario para que las sublistas se posicionen respecto a este contenedor */
+}
+
+/* Estilo de los elementos de la lista principal */
+.list-group-item {
+  cursor: pointer; /* Cambiar el cursor al pasar sobre los elementos de la lista */
+}
+
+/* Sublistas alineadas a la derecha */
+.dropdown-menu-right {
+  position: absolute;
+  left: 100%; /* Coloca la sublista a la derecha del elemento principal */
+  top: 0;
+  margin-left: 10px; /* Espacio entre la lista principal y la sublista */
+  min-width: 200px; /* Establece un tamaño mínimo para la sublista */
+  display: none; /* Las sublistas están ocultas por defecto */
+}
+
+/* Mostrar las sublistas al pasar el cursor sobre el elemento principal */
+.list-group-item:hover .dropdown-menu-right {
+  display: block; /* Muestra la sublista cuando el usuario pasa el ratón sobre el elemento */
+}
+
+/* Deshabilitar el cursor al pasar sobre las subopciones */
+.dropdown-menu-right .list-group-item {
+  cursor: default; /* Evita que el cursor cambie cuando pasa sobre las subopciones */
+}

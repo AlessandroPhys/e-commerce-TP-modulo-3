@@ -7,6 +7,7 @@ import { BarraSuperiorComponent } from './barra-superior/barra-superior.componen
 import { BannerComponent } from './banner/banner.component';
 import { SlideLibrosRecomendadosComponent } from './slide-libros-recomendados/slide-libros-recomendados.component';
 import { FooterDetailComponent } from './footer-detail/footer-detail.component';
+import { CategoriasOffcanvaComponent } from './categorias-offcanva/categorias-offcanva.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterDetailComponent } from './footer-detail/footer-detail.component';
     BarraSuperiorComponent,
     BannerComponent,
     SlideLibrosRecomendadosComponent,
-    FooterDetailComponent
+    FooterDetailComponent,
+    CategoriasOffcanvaComponent
 
   ],
   imports: [

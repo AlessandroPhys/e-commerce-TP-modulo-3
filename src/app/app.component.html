@@ -1,56 +1,57 @@
-<div>
-  <app-barra-superior></app-barra-superior>
-</div>
 
-
-<div class="banner-container">
-  <app-banner></app-banner>
-</div>
-
-<section class="section-libros">
-  <div class="titulos">
-    <hr>
-    <h2>LIBROS POPULARES</h2>
-    <hr>
+<div class="container-body">
+  <div>
+    <app-barra-superior></app-barra-superior>
+  </div>
+  <app-categorias-offcanva></app-categorias-offcanva>
+  <div class="banner-container">
+    <app-banner></app-banner>
   </div>
 
-  <div class="articulos-container">
-    <app-slide-libros-recomendados *ngFor="let articulo of articulos" [imagenUrl]="articulo.imagenUrl"
-      [titulo]="articulo.titulo" [autor]="articulo.autor" [precio]="articulo.precio">
-    </app-slide-libros-recomendados>
-  </div>
-
-
-  <div class="titulos">
-    <hr>
-    <h2>NUEVOS LANZAMIENTOS</h2>
-    <hr>
-  </div>
-
-  <div class="articulos-container">
-
-    <app-slide-libros-recomendados *ngFor="let articulo of articulos" [imagenUrl]="articulo.imagenUrl"
-      [titulo]="articulo.titulo" [autor]="articulo.autor" [precio]="articulo.precio">
-    </app-slide-libros-recomendados>
-  </div>
-
-</section>
-<div class="titulos">
-  <hr>
-  <h2>AUSPICIANTES</h2>
-  <hr>
-</div>
-<div class="editoriales-container">
-  <section class="bg-light">
+  <section class="section-libros">
+    <div class="titulos">
+      <hr>
+      <h2>LIBROS POPULARES</h2>
+      <hr>
+    </div>
 
     <div class="articulos-container">
-      <app-slide-libros-recomendados *ngFor="let editorial of editoriales"
-        [imagenUrl]="editorial.imagenUrl"
-        [mostrarPrecio]="false">
+      <app-slide-libros-recomendados *ngFor="let articulo of articulos" [imagenUrl]="articulo.imagenUrl"
+        [titulo]="articulo.titulo" [autor]="articulo.autor" [precio]="articulo.precio">
       </app-slide-libros-recomendados>
     </div>
+
+
+    <div class="titulos">
+      <hr>
+      <h2>NUEVOS LANZAMIENTOS</h2>
+      <hr>
+    </div>
+
+    <div class="articulos-container">
+
+      <app-slide-libros-recomendados *ngFor="let articulo of articulos" [imagenUrl]="articulo.imagenUrl"
+        [titulo]="articulo.titulo" [autor]="articulo.autor" [precio]="articulo.precio">
+      </app-slide-libros-recomendados>
+    </div>
+
   </section>
-  <footer class="pt-4 my-md-5 pt-md-5 border-top bg-light">
-    <app-footer-detail></app-footer-detail>
-  </footer>
+  <div class="titulos">
+    <hr>
+    <h2>AUSPICIANTES</h2>
+    <hr>
+  </div>
+  <div class="editoriales-container">
+    <section class="bg-light">
+
+      <div class="articulos-container">
+        <app-slide-libros-recomendados *ngFor="let editorial of editoriales" [imagenUrl]="editorial.imagenUrl"
+          [mostrarPrecio]="false">
+        </app-slide-libros-recomendados>
+      </div>
+    </section>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top bg-light">
+      <app-footer-detail></app-footer-detail>
+    </footer>
+  </div>
 </div>
