@@ -33,18 +33,10 @@ export class AppComponent {
       autor: 'Isabel Allende',
       precio: 98,
     },
-    {
-      imagenUrl: 'imagenes-libros/fotolibro5.png',
-      titulo: 'A A A Book With',
-      autor: 'F. Scott Fitzgerald',
-      precio: 55,
-    }
+
   ];
 
   editoriales = [
-    {
-      imagenUrl: 'imagenes-editoriales/img-editorial-1.png'
-    },
     {
       imagenUrl: 'imagenes-editoriales/img-editorial-1.png'
     },
